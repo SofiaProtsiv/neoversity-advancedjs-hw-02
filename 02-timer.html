@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown timer</title>
+    
+    
+    <script type="module" crossorigin src="/neoversity-advancedjs-hw-02/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/neoversity-advancedjs-hw-02/assets/common-3cd90513.js">
+    <link rel="modulepreload" crossorigin href="/neoversity-advancedjs-hw-02/assets/vendor-651d7991.js">
+    <link rel="stylesheet" href="/neoversity-advancedjs-hw-02/assets/common-af26786c.css">
+    <link rel="stylesheet" href="/neoversity-advancedjs-hw-02/assets/vendor-80d0dc0f.css">
+    <link rel="stylesheet" href="/neoversity-advancedjs-hw-02/assets/02-timer-cdf3911c.css">
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
+
+    <div class="form">
+      <input
+        type="datetime-local"
+        placeholder="Select DataTime"
+        id="datetime-picker"
+      />
+      <button type="button" disabled data-start>Start</button>
+    </div>
+
+    <div class="timer">
+      <div class="field">
+        <span class="value" data-days>00</span>
+        <span class="label">Days</span>
+      </div>
+      <div class="field">
+        <span class="value" data-hours>00</span>
+        <span class="label">Hours</span>
+      </div>
+      <div class="field">
+        <span class="value" data-minutes>00</span>
+        <span class="label">Minutes</span>
+      </div>
+      <div class="field">
+        <span class="value" data-seconds>00</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
