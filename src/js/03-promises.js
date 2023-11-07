@@ -19,14 +19,14 @@ function onSubmitForm(event) {
     return;
   }
 
-  for (let position = 1; position <= amount.value; position++) {
+  for (let position = 0; position <= amount.value; position++) {
     const delays = Number(delay.value) + step.value * position;
 
     createPromise(position, delays)
       .then(({ position, delay }) => {
         iziToast.show({
           title: 'Success',
-          message: `✅ Fulfilled promise ${position} in ${delay}ms`,
+          message: `✅ Fulfilled promise ${position + 1} in ${delay}ms`,
           position: 'topCenter',
           color: 'green',
         });
@@ -34,7 +34,7 @@ function onSubmitForm(event) {
       .catch(({ position, delay }) => {
         iziToast.show({
           title: 'Error',
-          message: `❌ Rejected promise ${position} in ${delay}ms`,
+          message: `❌ Rejected promise ${position + 1} in ${delay}ms`,
           position: 'topCenter',
           color: 'red',
         });
